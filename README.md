@@ -8,6 +8,7 @@ Official GitHub repo: https://github.com/la-yumba/functional-csharp-code-2/tree/
 
 ### Part 1. Foundations
 2. [Thinking in functions](src/Ch02)
+3. [Why function purity matters](src/Ch03)
 
 ## Running tests
 ```
