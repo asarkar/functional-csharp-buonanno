@@ -1,0 +1,22 @@
+name: CI
+
+on: [push, workflow_dispatch]
+
+jobs:
+  Build:
+
+    runs-on: ubuntu-latest
+    env:
+      NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+    steps:
+      - uses: actions/checkout@v5
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '9'
+      - name: Restore dependencies
+        run: dotnet restore --locked-mode
+      - name: Test
+        run: ./.github/run.sh --no-lint
+      - name: Lint
+        run: ./.github/run.sh --no-test
