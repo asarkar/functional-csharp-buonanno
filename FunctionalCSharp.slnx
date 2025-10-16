@@ -3,8 +3,8 @@
     <Project Path="src/Ch02/Ch02.csproj" />
     <Project Path="src/Ch03/Ch03.csproj" />
   </Folder>
-  <Folder Name="/test/">
-    <Project Path="test/Ch02Tests/Ch02Tests.csproj" />
-    <Project Path="test/Ch03Tests/Ch03Tests.csproj" />
+  <Folder Name="/tests/">
+    <Project Path="tests/Ch02.Tests/Ch02.Tests.csproj" />
+    <Project Path="tests/Ch03.Tests/Ch03.Tests.csproj" />
   </Folder>
 </Solution>

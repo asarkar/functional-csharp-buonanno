@@ -35,7 +35,7 @@ public static class Ch02
 
             while (eq <= gt)
             {
-                int cmp = comparison(xs[eq], pivot);
+                var cmp = comparison(xs[eq], pivot);
                 if (cmp < 0)
                 {
                     // Swap the elements at the equal and lesser indices.
@@ -67,12 +67,12 @@ public static class Ch02
     // takes a `Func<IDisposable>` as first parameter, instead of the `IDisposable`. 
     // (This can be used to fix warnings given by some code analysis tools about 
     // instantiating an `IDisposable` and not disposing it.)
-    public static R Using<TDisp, R>(
+    public static T Using<TDisp, T>(
         Func<TDisp> createDisposable,
-        Func<TDisp, R> func)
+        Func<TDisp, T> func)
         where TDisp : IDisposable
     {
-        using var disp = createDisposable();
+        using TDisp disp = createDisposable();
         return func(disp);
     }
 }

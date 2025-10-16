@@ -1,6 +1,7 @@
-namespace Ch02Tests;
 
 using Ch02;
+
+namespace Ch02.Tests;
 
 public class Ch02Tests
 {

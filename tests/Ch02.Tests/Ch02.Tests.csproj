@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../src/Ch02/Ch02.csproj" />
+    <ProjectReference Include="$(SolutionDir)src/Ch02/Ch02.csproj" />
   </ItemGroup>
 
 </Project>

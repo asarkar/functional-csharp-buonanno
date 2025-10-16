@@ -1,4 +1,6 @@
-﻿namespace Ch03;
+﻿using System.Globalization;
+
+namespace Ch03;
 
 public enum Bmi { Underweight, Healthy, Overweight }
 
@@ -25,14 +27,14 @@ public static class BmiCalculator
 
     public static void Main()
     {
-        double weight = Read("weight");
-        double height = Read("height");
+        var weight = Read("weight");
+        var height = Read("height");
         Console.WriteLine($"Your BMI is: {CalculateBmi(weight, height)}");
     }
 
     private static double Read(string field)
     {
         Console.Write($"Please enter your {field}: ");
-        return double.Parse(Console.ReadLine()!);
+        return double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
     }
 }

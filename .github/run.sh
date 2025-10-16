@@ -46,13 +46,13 @@ done
 basedir="${1:-.}"
 
 if (( no_test == 0 )); then
-  dotnet test --logger "console;verbosity=detailed" --no-restore "$basedir"
+  dotnet test "$basedir" --no-restore
 fi
 
 if (( no_lint == 0 )); then
 	if [[ -z "${CI}" ]]; then
-    dotnet format -v n --no-restore "$basedir"
+    dotnet format "$basedir" -v n --no-restore
   else
-    dotnet format -v n --no-restore --verify-no-changes "$basedir"
+    dotnet format "$basedir" -v n --no-restore --verify-no-changes
   fi
 fi

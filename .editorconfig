@@ -24,6 +24,19 @@ insert_final_newline = false
 #### .NET Coding Conventions ####
 [*.{cs,vb}]
 
+# Severity value must be warning or error to be enforced on build
+# IDE1006: Naming rule violation
+dotnet_diagnostic.IDE1006.severity = warning
+# IDE0005: Enable GenerateDocumentationFile to catch unnecessary using directives
+dotnet_diagnostic.IDE0005.severity = none
+# CA1050: Declare types in namespaces
+dotnet_diagnostic.CA1050.severity = suggestion
+# IDE0022: Use expression body for methods
+dotnet_diagnostic.IDE0022.severity = none
+# IDE0061: Use expression body for local functions
+dotnet_diagnostic.IDE0061.severity = none
+dotnet_analyzer_diagnostic.severity = warning
+
 # Organize usings
 dotnet_separate_import_directive_groups = true
 dotnet_sort_system_directives_first = true
@@ -82,8 +95,8 @@ dotnet_remove_unnecessary_suppression_exclusions = none
 
 # var preferences
 csharp_style_var_elsewhere = false:silent
-csharp_style_var_for_built_in_types = false:silent
-csharp_style_var_when_type_is_apparent = false:silent
+csharp_style_var_for_built_in_types = true:silent
+csharp_style_var_when_type_is_apparent = true:silent
 
 # Expression-bodied members
 csharp_style_expression_bodied_accessors = true:silent
@@ -376,4 +389,3 @@ dotnet_naming_style.s_camelcase.required_prefix = s_
 dotnet_naming_style.s_camelcase.required_suffix = 
 dotnet_naming_style.s_camelcase.word_separator = 
 dotnet_naming_style.s_camelcase.capitalization = camel_case
-
