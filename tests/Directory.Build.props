@@ -10,7 +10,10 @@
       https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
     -->
     <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+    <!-- Use Microsoft.Testing.Platform for running tests. -->
     <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+    <!-- Show test failures in the console. -->
+    <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
   </PropertyGroup>
 
   <ItemGroup>

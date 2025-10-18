@@ -13,6 +13,7 @@ Official GitHub repo: https://github.com/la-yumba/functional-csharp-code-2/tree/
 ### Part 2. Core techniques
 4. Designing function signatures and types
 5. [Modeling the possible absence of data](src/Ch05)
+6. [Patterns in functional programming](src/Ch06)
 
 ## Development
 

@@ -95,6 +95,8 @@ dotnet_style_readonly_field = true:warning
 
 # Parameter preferences
 dotnet_code_quality_unused_parameters = all:suggestion
+# CA1715: Identifiers should have correct prefix
+dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
 
 # Suppression preferences
 dotnet_remove_unnecessary_suppression_exclusions = none
