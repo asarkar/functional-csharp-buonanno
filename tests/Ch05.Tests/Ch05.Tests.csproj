@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="$(SolutionDir)src/Ch02/Ch02.csproj" />
+    <ProjectReference Include="$(SolutionDir)src/Ch05/Ch05.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,17 @@
 <Project>
-    <PropertyGroup>
-        <SolutionDir>$(MSBuildThisFileDirectory)</SolutionDir>
-        <EnableNETAnalyzers>true</EnableNETAnalyzers>
-        <AnalysisMode>Recommended</AnalysisMode>
-        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <SolutionDir>$(MSBuildThisFileDirectory)</SolutionDir>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisMode>Recommended</AnalysisMode>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LaYumba.Functional" />
+  </ItemGroup>
 </Project>

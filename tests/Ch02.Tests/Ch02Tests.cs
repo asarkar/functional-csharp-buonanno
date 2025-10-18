@@ -6,13 +6,19 @@ namespace Ch02.Tests;
 public class Ch02Tests
 {
     [Fact]
-    public void Negate()
+    public void Negate_WhenIsEven2_ReturnsFalse()
     {
-        static bool IsEven(int x) => x % 2 == 0;
-
         Assert.False(Ch02.Negate<int>(IsEven)(2));
+    }
+
+    [Fact]
+    public void Negate_WhenIsEven1_ReturnsTrue()
+    {
         Assert.True(Ch02.Negate<int>(IsEven)(1));
     }
+
+    private static bool IsEven(int x) =>
+        x % 2 == 0;
 
     [Theory]
     [MemberData(nameof(QsortData))]

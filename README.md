@@ -10,7 +10,18 @@ Official GitHub repo: https://github.com/la-yumba/functional-csharp-code-2/tree/
 2. [Thinking in functions](src/Ch02)
 3. [Why function purity matters](src/Ch03)
 
-## Running tests
+### Part 2. Core techniques
+4. Designing function signatures and types
+5. [Modeling the possible absence of data](src/Ch05)
+
+## Development
+
+Deleting `bin` and `obj` directories:
+```
+find . -type d \( -name bin -o -name obj \) -exec rm -rf {} +
+```
+
+Running tests:
 ```
 ./.github/run.sh <directory>
 ```
