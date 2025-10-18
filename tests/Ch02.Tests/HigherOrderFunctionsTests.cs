@@ -3,18 +3,18 @@ using Ch02;
 
 namespace Ch02.Tests;
 
-public class Ch02Tests
+public class HigherOrderFunctionsTests
 {
     [Fact]
     public void Negate_WhenIsEven2_ReturnsFalse()
     {
-        Assert.False(Ch02.Negate<int>(IsEven)(2));
+        Assert.False(HigherOrderFunctions.Negate<int>(IsEven)(2));
     }
 
     [Fact]
     public void Negate_WhenIsEven1_ReturnsTrue()
     {
-        Assert.True(Ch02.Negate<int>(IsEven)(1));
+        Assert.True(HigherOrderFunctions.Negate<int>(IsEven)(1));
     }
 
     private static bool IsEven(int x) =>
@@ -30,7 +30,7 @@ public class Ch02Tests
 
         static int NaturalOrder(int x, int y) => x.CompareTo(y);
 
-        Assert.Equal(expected, Ch02.Qsort(xs.ToList(), NaturalOrder));
+        Assert.Equal(expected, HigherOrderFunctions.Qsort(xs.ToList(), NaturalOrder));
     }
 
     // xUnit1047: Avoid using TheoryDataRow arguments that might not be serializable.

@@ -1,11 +1,11 @@
 using LaYumba.Functional;
 
-using static Ch05.Ch05;
+using static Ch05.Options;
 using static LaYumba.Functional.F;
 
 namespace Ch05.Tests;
 
-public class Ch05Tests
+public class OptionsTests
 {
     [Fact]
     public void Parse_ValidDay_ReturnsSome()

@@ -1,6 +1,6 @@
 ﻿namespace Ch02;
 
-public static class Ch02
+public static class HigherOrderFunctions
 {
     // 2. Write a function that negates a given predicate: whenvever the given predicate
     // evaluates to `true`, the resulting function evaluates to `false`, and vice versa.

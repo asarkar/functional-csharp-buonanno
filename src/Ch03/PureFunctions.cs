@@ -12,7 +12,7 @@ public enum Bmi { Underweight, Healthy, Overweight }
 // 5. Unit test the pure parts.
 // 6. Unit test the overall workflow using the function-based approach to abstract 
 //    away the reading from and writing to the console.
-public static class BmiCalculator
+public static class PureFunctions
 {
     public static Bmi CalculateBmi(double weight, double height)
     {

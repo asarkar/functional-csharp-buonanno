@@ -6,7 +6,7 @@ using static LaYumba.Functional.F;
 
 namespace Ch05;
 
-public static partial class Ch05
+public static partial class Options
 {
     // 1. Write a generic function that takes a string and parses it as a value of an enum. 
     // It should be usable as follows:
