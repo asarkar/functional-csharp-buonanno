@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)src/Ch07/Ch07.csproj" />
+  </ItemGroup>
+
+</Project>
