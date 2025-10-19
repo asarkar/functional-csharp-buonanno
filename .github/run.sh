@@ -5,11 +5,12 @@ export TESTINGPLATFORM_TELEMETRY_OPTOUT=1
 
 set -e
 
+# Verify that all projects are included in the solution.
 while IFS='' read -r -d '' project; do
 	dir=${project%/*}
 	dir="${dir##*/}"
 	found=0
-	# This is to prevent grep from prematurely terminating the script.
+	# Prevent grep from prematurely terminating the script.
 	grep -q "$dir" FunctionalCSharp.slnx || found=$?
 	if (( found > 0 )); then
 		default_color=$(tput -Txterm-256color sgr0)

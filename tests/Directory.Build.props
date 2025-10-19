@@ -4,7 +4,10 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <!-- https://xunit.net/docs/getting-started/v3/microsoft-testing-platform -->
+    <!-- https://xunit.net/docs/getting-started/v3/microsoft-testing-platform
+    Without this property, `dotnet run` will use xUnit In-Process Runner.
+    Beginning .NET 10, it has no bearing on `dotnet test`; that is controlled by
+    global.json -->
     <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
   </PropertyGroup>
 
