@@ -10,7 +10,7 @@ while IFS='' read -r -d '' project; do
 	dir="${dir##*/}"
 	found=0
 	# This is to prevent grep from prematurely terminating the script.
-	grep -q "$dir" Exercism.slnx || found=$?
+	grep -q "$dir" FunctionalCSharp.slnx || found=$?
 	if (( found > 0 )); then
 		default_color=$(tput -Txterm-256color sgr0)
 		red=$(tput -Txterm-256color setaf 1)
