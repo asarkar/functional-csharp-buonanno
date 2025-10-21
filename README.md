@@ -16,6 +16,7 @@ Official GitHub repo: https://github.com/la-yumba/functional-csharp-code-2/tree/
 6. [Patterns in functional programming](src/Ch06)
 7. [Designing programs with function composition](src/Ch07)
 8. [Functional error handling](src/Ch08)
+9. [Structuring an application with functions](src/Ch09)
 
 ## Development
 

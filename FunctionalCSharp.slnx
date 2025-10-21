@@ -6,6 +6,7 @@
     <Project Path="src/Ch06/Ch06.csproj" />
     <Project Path="src/Ch07/Ch07.csproj" />
     <Project Path="src/Ch08/Ch08.csproj" />
+    <Project Path="src/Ch09/Ch09.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/Ch02.Tests/Ch02.Tests.csproj" />
@@ -14,5 +15,6 @@
     <Project Path="tests/Ch06.Tests/Ch06.Tests.csproj" />
     <Project Path="tests/Ch07.Tests/Ch07.Tests.csproj" />
     <Project Path="tests/Ch08.Tests/Ch08.Tests.csproj" />
+    <Project Path="tests/Ch09.Tests/Ch09.Tests.csproj" />
   </Folder>
 </Solution>
