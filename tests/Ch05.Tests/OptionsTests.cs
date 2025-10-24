@@ -50,14 +50,14 @@ public class OptionsTests
     private static string GetValue(Option<Email> email) =>
         email.Match
         (
-            None: () => string.Empty,
+            None: () => throw new InvalidOperationException("Empty Option"),
             Some: (email) => email
         );
 
     [Fact]
     public void Email_Invalid_ReturnsNone()
     {
-        var actual = GetValue(Email.Create("batman"));
-        Assert.Equal(string.Empty, actual);
+        Option<Email> email = Email.Create("batman");
+        _ = Assert.Throws<InvalidOperationException>(() => GetValue(email));
     }
 }

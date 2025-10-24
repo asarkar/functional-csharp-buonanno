@@ -4,6 +4,8 @@ using LaYumba.Functional;
 
 using static LaYumba.Functional.F;
 
+using Candidate = System.String;
+
 namespace Ch08;
 
 public static class FunctionalErrors
@@ -37,11 +39,12 @@ public static class FunctionalErrors
     // functions returning `Either` and `Option` can be chained with `Bind`,
     // yielding an `Option`.
 
-    private sealed record Candidate(string Name);
-
-    private static readonly Func<Candidate, bool> IsEligible = c => true;
-    private static readonly Func<Candidate, Either<Error, Candidate>> TechTest = c => Right(c);
-    private static readonly Func<Candidate, Option<Candidate>> Interview = c => Some(c);
+    private static readonly Func<Candidate, bool> IsEligible =
+        _ => throw new NotImplementedException();
+    private static readonly Func<Candidate, Either<Error, Candidate>> TechTest =
+        _ => throw new NotImplementedException();
+    private static readonly Func<Candidate, Option<Candidate>> Interview =
+        _ => throw new NotImplementedException();
 
     public static Option<T> Bind<L, R, T>(this Either<L, R> either, Func<R, Option<T>> f) =>
         either.Match(

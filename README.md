@@ -7,16 +7,20 @@ Official GitHub repo: https://github.com/la-yumba/functional-csharp-code-2/tree/
 ## Contents
 
 ### Part 1. Foundations
-2. [Thinking in functions](src/Ch02)
-3. [Why function purity matters](src/Ch03)
+2.  [Thinking in functions](src/Ch02)
+3.  [Why function purity matters](src/Ch03)
 
 ### Part 2. Core techniques
-4. Designing function signatures and types
-5. [Modeling the possible absence of data](src/Ch05)
-6. [Patterns in functional programming](src/Ch06)
-7. [Designing programs with function composition](src/Ch07)
-8. [Functional error handling](src/Ch08)
-9. [Structuring an application with functions](src/Ch09)
+4.  Designing function signatures and types
+5.  [Modeling the possible absence of data](src/Ch05)
+6.  [Patterns in functional programming](src/Ch06)
+7.  [Designing programs with function composition](src/Ch07)
+8.  [Functional error handling](src/Ch08)
+9.  [Structuring an application with functions](src/Ch09)
+10. [Working effectively with multi-argument functions](src/Ch10)
+11. Representing state and change
+12. [Functional data structures](src/Ch12)
+13. Event sourcing
 
 ## Development
 
